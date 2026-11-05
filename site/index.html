@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gita Pathshala – Bhagavad Gita for Kids & Everyone</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F6FF; --dot:#DCE5FA; --surface:#FFFFFF; --ink:#211A55; --muted:#5A5788;
+  --saffron:#FF7A00; --marigold:#FFBE0B; --lotus:#E8457E; --sky:#2F6FE4; --peacock:#0B8A92;
+  --leaf:#2E9E55; --plum:#7A3DC0; --violet:#5145C8; --rose:#E0503F;
+  --ok:#1E8A42; --ok-soft:#DCF5E3; --bad:#C62E24; --bad-soft:#FDE3E0;
+  --leaf-a:#F1DDA8; --leaf-b:#DFBC74; --leaf-edge:#B98C3E; --leaf-ink:#3B2306;
+  --ui:"Baloo 2","Nunito","Noto Sans Devanagari",system-ui,sans-serif;
+  --skt:"Tiro Devanagari Sanskrit","Noto Serif Devanagari",serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#120F33; --dot:#1E1A4D; --surface:#1D1947; --ink:#F1EEFF; --muted:#B7B2E3;
+    --ok:#6BD88C; --ok-soft:#173B27; --bad:#FF8C80; --bad-soft:#47201E;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#120F33; --dot:#1E1A4D; --surface:#1D1947; --ink:#F1EEFF; --muted:#B7B2E3;
+  --ok:#6BD88C; --ok-soft:#173B27; --bad:#FF8C80; --bad-soft:#47201E;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;color:var(--ink);font-family:var(--ui);font-size:1.08rem;line-height:1.6;-webkit-font-smoothing:antialiased;
+  background-color:var(--bg);background-image:radial-gradient(var(--dot) 1.6px,transparent 1.7px);background-size:26px 26px}
+button{font-family:inherit;font-size:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:8px}
+@media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* top bar */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:#22195E}
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:#22195E;color:#fff;box-shadow:0 4px 0 var(--marigold)}
+.topbar-in{max-width:1040px;margin:0 auto;display:flex;align-items:center;gap:.75rem;padding:.5rem 1rem}
+.brand{display:flex;align-items:center;gap:.45rem;text-decoration:none;color:#fff;font-weight:800;font-size:1.3rem}
+.brand .feather{width:26px;height:26px}
+.brand span{color:var(--marigold)}
+.spacer{flex:1}
+.top-link{color:#22195E;background:var(--marigold);text-decoration:none;font-weight:700;padding:.2rem .9rem;border-radius:999px;font-size:.95rem}
+main{max-width:1040px;margin:0 auto;padding:1.25rem 1rem 4rem}
+
+/* buttons */
+.btn{display:inline-block;background:var(--saffron);color:#fff;border:0;border-radius:16px;padding:.6rem 1.35rem;font-weight:800;text-decoration:none;cursor:pointer;font-size:1.08rem;box-shadow:0 5px 0 #B85400;transition:transform .1s,box-shadow .1s}
+.btn:hover{filter:brightness(1.06)}
+.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #B85400}
+.btn.alt{background:var(--surface);color:var(--ink);box-shadow:0 5px 0 var(--dot),inset 0 0 0 2.5px var(--ink)}
+
+/* hero */
+.hero{position:relative;border-radius:32px;overflow:hidden;color:#fff;min-height:420px;display:flex;align-items:flex-end;box-shadow:0 8px 0 #22195E}
+.hero svg.scene{position:absolute;inset:0;width:100%;height:100%}
+.hero-text{position:relative;padding:2rem 2.2rem 2.2rem;max-width:560px}
+.hero h1{font-size:clamp(2.6rem,7.5vw,4.4rem);line-height:.95;margin:0 0 .6rem;font-weight:800;text-shadow:0 4px 0 rgba(34,25,94,.55)}
+.hero h1 small{display:block;font-size:.42em;color:var(--marigold);font-weight:700;margin-bottom:.35rem;text-shadow:none}
+.hero p{font-size:1.2rem;margin:0 0 1.3rem;max-width:34ch;text-shadow:0 2px 8px rgba(20,10,60,.6)}
+@media (max-width:640px){.hero{min-height:500px}.hero-text{padding:1.4rem}.hero::after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(180deg,transparent,rgba(26,18,64,.85) 55%)}.hero-text{z-index:1}}
+.bob{animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+
+/* palm leaf */
+.leaf{position:relative;color:var(--leaf-ink);border-radius:60px/50%;padding:2.2rem 4rem;text-align:center;
+  background:repeating-linear-gradient(180deg,rgba(110,70,15,.10) 0 1px,transparent 1px 8px),linear-gradient(175deg,var(--leaf-a),var(--leaf-b));
+  box-shadow:inset 0 0 0 2px var(--leaf-edge),inset 0 -10px 24px -14px rgba(90,55,10,.55),0 7px 0 rgba(120,80,20,.35)}
+.leaf::before,.leaf::after{content:"";position:absolute;top:50%;width:16px;height:16px;margin-top:-8px;border-radius:50%;background:radial-gradient(circle,#5a3a10 0 3px,#8a5f22 3px 5px,transparent 6px)}
+.leaf::before{left:1.6rem}.leaf::after{right:1.6rem}
+.leaf .thread{position:absolute;left:calc(1.6rem + 7px);top:50%;width:3px;height:22%;background:var(--rose);border-radius:2px}
+.leaf .vnum{display:inline-block;font-weight:700;font-size:.9rem;background:rgba(59,35,6,.12);padding:.05rem .8rem;border-radius:999px;margin-bottom:.5rem}
+.shloka{font-family:var(--skt);font-size:clamp(1.35rem,3.6vw,2.1rem);line-height:1.75;margin:0}
+.translit{font-family:var(--skt);font-style:italic;font-size:clamp(.95rem,2.3vw,1.12rem);line-height:1.6;margin:.8rem auto 0;max-width:46ch;opacity:.85}
+.leaf-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;margin-top:1rem}
+.leaf-btn{border:0;background:var(--leaf-ink);color:var(--leaf-a);font-weight:700;border-radius:999px;padding:.35rem 1.05rem;cursor:pointer;font-size:.98rem}
+.leaf-btn.soft{background:rgba(59,35,6,.14);color:var(--leaf-ink)}
+@media (max-width:600px){.leaf{padding:1.6rem 2.4rem;border-radius:36px/50%}.leaf::before{left:.7rem}.leaf::after{right:.7rem}.leaf .thread{left:calc(.7rem + 7px)}}
+
+/* home */
+.featured{margin:2.5rem auto 0;max-width:820px;text-align:center}
+.featured .cap{margin:1.1rem 0 0;font-weight:600;color:var(--muted)}
+.h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:800;margin:3rem 0 .2rem;line-height:1.15}
+.sub{color:var(--muted);margin:0 0 1.4rem;font-size:1.1rem}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:1.6rem;align-items:center;margin-top:3rem;background:var(--surface);border:3px solid var(--ink);border-radius:28px;padding:1.6rem;box-shadow:7px 7px 0 var(--ink)}
+.about h2{font-size:1.8rem;margin:0 0 .4rem;line-height:1.2}
+.about p{margin:0 0 .7rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin:0;padding:0;list-style:none}
+.facts li{border-radius:20px;padding:.9rem .4rem;text-align:center;color:#fff;font-weight:700;line-height:1.2}
+.facts li:nth-child(1){background:var(--saffron);transform:rotate(-3deg)}
+.facts li:nth-child(2){background:var(--lotus);transform:rotate(2deg)}
+.facts li:nth-child(3){background:var(--peacock);transform:rotate(-1.5deg)}
+.facts b{display:block;font-size:2.3rem;line-height:1}
+.facts small{font-size:.92rem}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.tiles{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.3rem}
+.tile{display:flex;flex-direction:column;height:100%;text-decoration:none;color:#fff;border-radius:28px;padding:1.3rem 1.3rem 1.1rem;position:relative;overflow:hidden;
+  background:linear-gradient(150deg,var(--c1),var(--c2));box-shadow:0 7px 0 var(--c3);transition:transform .15s}
+.tile:hover{transform:translateY(-4px) rotate(-.5deg)}
+.tile::after{content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;border-radius:50%;background:rgba(255,255,255,.14)}
+.tile .ico{font-size:3rem;line-height:1;position:relative;z-index:1}
+.tile .vn{position:absolute;right:1.1rem;top:1rem;background:rgba(255,255,255,.95);color:var(--c3);font-weight:800;border-radius:14px;padding:.1rem .7rem;font-size:1.05rem;z-index:1}
+.tile .tt{font-size:1.4rem;font-weight:800;line-height:1.2;margin:.7rem 0 .2rem}
+.tile .ts{opacity:.92;font-size:.98rem;flex:1}
+.tile .foot{display:flex;justify-content:space-between;align-items:center;margin-top:.9rem}
+.tile .go{background:#fff;color:var(--c3);font-weight:800;border-radius:999px;padding:.15rem .9rem;font-size:.95rem}
+.stars{color:var(--marigold);font-size:1.25rem;letter-spacing:.06em;white-space:nowrap}
+.stars .off{opacity:.35;color:inherit}
+.tile .stars{color:#FFE27A}
+.tile .stars .off{color:#fff;opacity:.4}
+.coming{color:var(--muted);margin-top:1.6rem;text-align:center;font-weight:600}
+
+/* verse page */
+.vhero{border-radius:32px;padding:1.6rem 1.6rem 2rem;color:#fff;position:relative;overflow:hidden;background:linear-gradient(150deg,var(--c1),var(--c2));box-shadow:0 8px 0 var(--c3)}
+.vhero::before{content:"";position:absolute;left:-60px;bottom:-80px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.12)}
+.vhero-top{display:flex;align-items:center;gap:1rem;position:relative;margin-bottom:1.4rem}
+.vhero .ico{font-size:3.2rem;line-height:1;background:rgba(255,255,255,.2);border-radius:22px;width:76px;height:76px;display:grid;place-items:center;flex:none}
+.vhero .meta{font-weight:700;opacity:.92}
+.vhero h1{margin:0;font-size:clamp(1.6rem,4.5vw,2.4rem);line-height:1.1;font-weight:800}
+.secnav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 52px);z-index:5;margin:1.2rem -1rem 0;padding:.6rem 1rem;overflow-x:auto;white-space:nowrap;scrollbar-width:none;background:var(--bg)}
+.secnav::-webkit-scrollbar{display:none}
+.secnav button{border:2.5px solid var(--c);background:var(--surface);border-radius:999px;padding:.15rem .8rem;margin-right:.4rem;cursor:pointer;font-size:.93rem;font-weight:700;color:var(--ink)}
+.secnav button.on{background:var(--c);color:var(--ct)}
+.card{--c:var(--saffron);--ct:#fff;background:var(--surface);border:3px solid var(--c);border-radius:28px;box-shadow:7px 7px 0 var(--c);margin:2rem 0;overflow:hidden}
+.card-h{background:var(--c);color:var(--ct);display:flex;align-items:center;gap:.8rem;padding:.7rem 1.2rem}
+.card-h .badge{width:48px;height:48px;border-radius:16px;background:rgba(255,255,255,.9);display:grid;place-items:center;font-size:1.6rem;flex:none}
+.card-h h2{margin:0;font-size:1.4rem;line-height:1.2;font-weight:800}
+.card-h h2 small{display:block;font-size:.88rem;font-weight:600;opacity:.88}
+.card-h .step{margin-left:auto;font-weight:800;font-size:.9rem;background:rgba(0,0,0,.15);border-radius:999px;padding:.05rem .7rem;white-space:nowrap}
+.card-b{padding:1.3rem 1.4rem}
+.card-b p{margin:0 0 .9rem;max-width:70ch}
+.card-b p:last-child{margin-bottom:0}
+.card.plain-b .card-b{padding:1.4rem}
+.meaning{font-size:1.3rem;line-height:1.7;font-weight:500;margin:0}
+.meaning.hi{font-size:1.35rem}
+.quote-mark{font-size:3.5rem;line-height:.5;color:var(--c);font-weight:800;display:block;height:1.4rem}
+.words{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:.7rem}
+.word{border-radius:18px;padding:.7rem .85rem;line-height:1.35;background:color-mix(in srgb,var(--c) 12%,var(--surface));border:2px solid color-mix(in srgb,var(--c) 40%,transparent)}
+.word .w{font-family:var(--skt);font-size:1.4rem;display:block;color:var(--c)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .word .w{color:#7FE3E8}}
+:root[data-theme="dark"] .word .w{color:#7FE3E8}
+.word .t{display:block;font-style:italic;color:var(--muted);font-size:.95rem}
+.word .e{display:block;font-weight:700}
+.timeline{position:relative;padding-left:1.6rem;margin:0}
+.timeline::before{content:"";position:absolute;left:.45rem;top:.4rem;bottom:.4rem;width:4px;border-radius:4px;background:repeating-linear-gradient(180deg,var(--c) 0 10px,transparent 10px 16px)}
+.timeline p{position:relative}
+.timeline p::before{content:"";position:absolute;left:-1.55rem;top:.45rem;width:16px;height:16px;border-radius:50%;background:var(--c);box-shadow:0 0 0 4px var(--surface)}
+.lessons{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:.8rem}
+.lessons li{background:color-mix(in srgb,var(--c) 11%,var(--surface));border-radius:18px;padding:.8rem 1rem .9rem 3.2rem;position:relative;line-height:1.45}
+.lessons li::before{content:"★";position:absolute;left:.8rem;top:.7rem;width:32px;height:32px;border-radius:50%;background:var(--c);color:#fff;display:grid;place-items:center;font-size:1.05rem}
+.lessons b{display:block;font-size:1.08rem;margin-bottom:.15rem}
+.examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem}
+.ex{--ec:var(--sky);border-radius:20px;padding:.9rem 1rem 1rem;line-height:1.45;background:var(--surface);border:2.5px solid var(--ec);box-shadow:4px 4px 0 var(--ec);transform:rotate(var(--r,0deg));transition:transform .15s}
+.ex:hover{transform:rotate(0) scale(1.02)}
+.ex:nth-child(8n+1){--ec:var(--saffron);--r:-1deg}.ex:nth-child(8n+2){--ec:var(--lotus);--r:1deg}
+.ex:nth-child(8n+3){--ec:var(--peacock);--r:-.6deg}.ex:nth-child(8n+4){--ec:var(--plum);--r:.8deg}
+.ex:nth-child(8n+5){--ec:var(--leaf);--r:1deg}.ex:nth-child(8n+6){--ec:var(--sky);--r:-1deg}
+.ex:nth-child(8n+7){--ec:var(--rose);--r:.6deg}.ex:nth-child(8n+8){--ec:var(--violet);--r:-.8deg}
+.ex .top{display:flex;align-items:center;gap:.5rem;margin-bottom:.35rem}
+.ex .e-ico{font-size:1.7rem;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--ec) 16%,var(--surface));flex:none}
+.ex b{font-size:1.08rem;line-height:1.2}
+.ex .n{margin-left:auto;font-weight:800;color:var(--ec);font-size:.9rem}
+.ex p{margin:0;font-size:1rem}
+.story{display:grid;grid-template-columns:150px 1fr;gap:1.4rem;align-items:start}
+.story-art{aspect-ratio:3/4;border-radius:20px;background:linear-gradient(160deg,var(--c1),var(--c2));display:grid;place-items:center;font-size:4.2rem;box-shadow:0 6px 0 var(--c3);position:sticky;top:130px}
+.story h3{margin:0 0 .6rem;font-size:1.6rem;line-height:1.2;color:var(--c)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .story h3{color:#FF9C8F}}
+:root[data-theme="dark"] .story h3{color:#FF9C8F}
+.story p{margin:0 0 .85rem;max-width:66ch}
+.story p.first::first-letter{font-size:3em;float:left;line-height:.85;margin:.08em .12em 0 0;color:var(--c);font-weight:800}
+.moral{margin-top:1rem;background:var(--marigold);color:#2A1E00;border-radius:16px;padding:.7rem 1rem;font-weight:700;display:flex;gap:.6rem;align-items:flex-start}
+@media (max-width:640px){.story{grid-template-columns:1fr}.story-art{aspect-ratio:auto;height:120px;position:static}}
+
+/* quiz */
+.q-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem;font-weight:700;color:var(--muted)}
+.q-dots{display:flex;gap:.35rem}
+.q-dots i{width:30px;height:10px;border-radius:6px;background:var(--dot)}
+.q-dots i.done{background:var(--leaf)}.q-dots i.miss{background:var(--rose)}.q-dots i.cur{background:var(--marigold)}
+.q-text{font-size:1.35rem;font-weight:800;line-height:1.35;margin:0 0 1rem}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}
+@media (max-width:600px){.opts{grid-template-columns:1fr}}
+.opt{--oc:var(--sky);display:flex;align-items:center;gap:.7rem;text-align:left;background:var(--oc);color:#fff;border:0;border-radius:18px;padding:.75rem .9rem;cursor:pointer;font-size:1.06rem;font-weight:700;line-height:1.3;box-shadow:0 5px 0 color-mix(in srgb,var(--oc) 70%,#000);transition:transform .1s,opacity .2s}
+.opt:nth-child(1){--oc:#E8457E}.opt:nth-child(2){--oc:#2F6FE4}.opt:nth-child(3){--oc:#E8930C}.opt:nth-child(4){--oc:#2E9E55}
+.opt .L{width:34px;height:34px;border-radius:12px;background:rgba(255,255,255,.25);display:grid;place-items:center;flex:none;font-weight:800}
+.opt:hover:not([disabled]){transform:translateY(-2px)}
+.opt:active:not([disabled]){transform:translateY(3px);box-shadow:0 2px 0 color-mix(in srgb,var(--oc) 70%,#000)}
+.opt[disabled]{cursor:default;opacity:.35}
+.opt.right{opacity:1;outline:4px solid var(--ok);outline-offset:3px}
+.opt.right .L::after{content:"✓"}.opt.right .L span{display:none}
+.opt.wrong{opacity:1}
+.opt.wrong .L::after{content:"✗"}.opt.wrong .L span{display:none}
+.fb{margin-top:1.1rem;padding:.8rem 1rem;border-radius:16px;line-height:1.5;font-size:1.02rem}
+.fb.good{background:var(--ok-soft)}.fb.nope{background:var(--bad-soft)}
+.fb b{font-size:1.1rem}
+.q-next{margin-top:1rem}
+.result{text-align:center;padding:.6rem 0}
+.result .big{font-size:4rem;line-height:1;display:inline-block;animation:pop .6s cubic-bezier(.2,1.6,.4,1)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.result h3{font-size:1.8rem;margin:.4rem 0 .2rem}
+.result .stars{font-size:2.4rem}
+.pager{display:flex;justify-content:space-between;gap:.8rem;margin-top:2.5rem;flex-wrap:wrap}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:20;overflow:hidden}
+.confetti i{position:absolute;top:-20px;width:10px;height:14px;border-radius:3px;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+.toast{position:fixed;left:50%;bottom:calc(1rem + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:.55rem 1rem;border-radius:12px;font-size:.95rem;opacity:0;pointer-events:none;transition:opacity .25s;max-width:90vw;text-align:center;z-index:30}
+.toast.show{opacity:1}
+.chapters{display:grid;gap:.7rem}
+.chap{background:var(--surface);border:2.5px solid var(--ink);border-radius:20px;box-shadow:4px 4px 0 var(--ink)}
+.chap summary{cursor:pointer;padding:.7rem 1.1rem;font-weight:800;font-size:1.1rem;list-style:none;display:flex;justify-content:space-between;gap:.5rem}
+.chap summary::-webkit-details-marker{display:none}
+.chap summary span{color:var(--muted);font-weight:600;font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem;padding:0 1.1rem 1rem}
+.chips a{text-decoration:none;color:var(--ink);background:var(--bg);border:2px solid var(--dot);border-radius:12px;padding:.1rem .6rem;font-weight:700}
+.chips a:hover{border-color:var(--saffron)}
+footer{text-align:center;color:var(--muted);font-size:.95rem;padding:2rem 1rem 1.2rem;font-weight:600}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#home"><svg class="feather" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 36 L30 8" stroke="#FFBE0B" stroke-width="2" stroke-linecap="round"/><ellipse cx="26" cy="13" rx="7" ry="12" transform="rotate(38 26 13)" fill="#2E9E55"/><ellipse cx="27" cy="12" rx="4.5" ry="6.5" transform="rotate(38 27 12)" fill="#FFBE0B"/><ellipse cx="27" cy="12" rx="3" ry="4.5" transform="rotate(38 27 12)" fill="#0B8A92"/><ellipse cx="27.3" cy="11.6" rx="1.6" ry="2.4" transform="rotate(38 27 12)" fill="#1F3FA8"/></svg>Gita <span>Pathshala</span></a>
+    <div class="spacer"></div>
+    <a class="top-link" href="#home">All verses</a>
+  </div>
+</header>
+<main id="app"></main>
+<footer>🪷 Gita Pathshala · One verse a day, lessons for a lifetime</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="verses.js"></script>
+<script>
+const PALETTES=[["#FF7A00","#E8457E","#A8320B"],["#2F6FE4","#0B8A92","#1A3F8F"],["#2E9E55","#0B8A92","#1B6034"],["#7A3DC0","#E8457E","#4A2180"],["#E0503F","#FF7A00","#8E2219"],["#0B8A92","#2F6FE4","#08555B"]];
+const VERSES = (window.GITA_VERSES||[]).slice().sort((a,b)=>a.order-b.order);
+const TOTAL = window.GITA_TOTAL||700;
+VERSES.forEach(v=>{
+  v.shloka=(v.speaker?`<span style="font-size:.6em;opacity:.7">${v.speaker}</span><br>`:"")+v.sanskrit.join("<br>");
+  v.speak=v.sanskrit.join(" ");
+  v.translitHTML=v.translit.join("<br>");
+});
+const META = new Proxy({},{get:(_,id)=>{const v=VERSES.find(x=>x.id===id)||{order:0};const p=PALETTES[v.order%PALETTES.length];return {icon:v.icon||"🪷",storyIcon:v.storyIcon||"📖",c1:p[0],c2:p[1],c3:p[2]};}});
+const SECTIONS = [
+  ["sanskrit","Original Sanskrit Shloka","The verse as it was spoken","📜","#FF7A00","#fff","Sanskrit"],
+  ["hindi","Hindi Meaning","हिंदी अर्थ","🪔","#E8457E","#fff","Hindi"],
+  ["english","English Meaning","What the verse says","🔤","#2F6FE4","#fff","English"],
+  ["deeper","Deeper Meaning","What Krishna really means","💎","#7A3DC0","#fff","Deeper meaning"],
+  ["words","Word by Word Meaning","Each Sanskrit word, explained","🧩","#0B8A92","#fff","Word by word"],
+  ["background","A Little Background","What happened before this verse","🎬","#B5651D","#fff","Background"],
+  ["lessons","Deeper Life Lessons","How to use this in your life","🌟","#2E9E55","#fff","Life lessons"],
+  ["examples","8 Examples from Kids’ Lives Today","The verse in everyday life","🧒","#FFBE0B","#2A1E00","Examples"],
+  ["story","An Inspiring Story","A story to remember it by","📖","#E0503F","#fff","Story"],
+  ["quiz","Interactive Quiz – Let’s Check Your Understanding!","4 questions, a star for each right answer","🎯","#6C4CE0","#fff","Quiz"]
+];
+
+const SCENE = `<svg class="scene" viewBox="0 0 1200 460" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22195E"/><stop offset=".38" stop-color="#6B2FA0"/>
+      <stop offset=".7" stop-color="#F0508C"/><stop offset="1" stop-color="#FFB347"/>
+    </linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#FFE38A" stop-opacity=".9"/><stop offset="1" stop-color="#FFE38A" stop-opacity="0"/></radialGradient>
+    <linearGradient id="shade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1A1240" stop-opacity=".8"/><stop offset=".55" stop-color="#1A1240" stop-opacity="0"/></linearGradient>
+  </defs>
+  <rect width="1200" height="460" fill="url(#sky)"/>
+  <g fill="#fff" opacity=".8"><circle cx="120" cy="60" r="2"/><circle cx="300" cy="40" r="1.6"/><circle cx="460" cy="80" r="1.8"/><circle cx="620" cy="30" r="1.4"/><circle cx="210" cy="120" r="1.3"/><circle cx="760" cy="70" r="1.5"/><circle cx="1000" cy="50" r="1.8"/></g>
+  <circle cx="860" cy="300" r="220" fill="url(#glow)"/>
+  <circle class="bob" cx="860" cy="300" r="105" fill="#FFD45C"/>
+  <circle cx="860" cy="300" r="80" fill="#FFE27A"/>
+  <g fill="#fff" opacity=".35"><ellipse cx="560" cy="170" rx="90" ry="18"/><ellipse cx="620" cy="155" rx="55" ry="20"/><ellipse cx="1080" cy="200" rx="80" ry="15"/></g>
+  <g stroke="#2A1550" stroke-width="3" fill="none" stroke-linecap="round" opacity=".7"><path d="M640 120 q10 -10 20 0 q10 -10 20 0"/><path d="M700 95 q8 -8 16 0 q8 -8 16 0"/><path d="M590 100 q7 -7 14 0 q7 -7 14 0"/></g>
+  <path d="M0 330 Q150 280 300 315 T600 300 T900 305 T1200 290 V460 H0Z" fill="#8A3C9E" opacity=".75"/>
+  <g fill="#5B2580">
+    ${[60,110,160,210,260,330,390,450,520].map((x,i)=>`<rect x="${x}" y="${292+(i%3)*6}" width="2.5" height="30"/><path d="M${x+2.5} ${292+(i%3)*6} l18 6 l-18 6z" fill="${i%2?'#FF7A00':'#FFBE0B'}"/>`).join("")}
+  </g>
+  <path d="M0 360 Q200 330 420 355 T820 350 T1200 345 V460 H0Z" fill="#4E2A86"/>
+  <path d="M0 395 Q300 375 600 392 T1200 385 V460 H0Z" fill="#2B1F6B"/>
+  <g transform="translate(760 250)" fill="#1A1240">
+    <path d="M150 -20 L150 -150" stroke="#1A1240" stroke-width="6"/>
+    <path d="M153 -150 L235 -128 L153 -106Z" fill="#FF7A00"/>
+    <path d="M153 -150 L235 -128 L153 -128Z" fill="#FFBE0B"/>
+    <path d="M40 30 L270 30 L250 95 L60 95Z"/>
+    <path d="M80 30 Q160 -40 240 30" fill="none" stroke="#1A1240" stroke-width="6"/>
+    <path d="M200 -40 Q240 15 205 70" fill="none" stroke="#FFBE0B" stroke-width="4"/>
+    <line x1="203" y1="-38" x2="206" y2="68" stroke="#FFE27A" stroke-width="1.5"/>
+    <circle cx="160" cy="120" r="58" fill="#1A1240"/>
+    <circle cx="160" cy="120" r="44" fill="none" stroke="#FFBE0B" stroke-width="5"/>
+    <g stroke="#FFBE0B" stroke-width="4">${[0,30,60,90,120,150].map(a=>`<line x1="${160+44*Math.cos(a*Math.PI/180)}" y1="${120+44*Math.sin(a*Math.PI/180)}" x2="${160-44*Math.cos(a*Math.PI/180)}" y2="${120-44*Math.sin(a*Math.PI/180)}"/>`).join("")}</g>
+    <circle cx="160" cy="120" r="9" fill="#FFBE0B"/>
+    <path d="M40 60 L-80 40" stroke="#1A1240" stroke-width="7"/>
+  </g>
+  <g transform="translate(1110 40) rotate(28)">
+    <line x1="0" y1="0" x2="0" y2="230" stroke="#FFBE0B" stroke-width="4"/>
+    <ellipse cx="0" cy="70" rx="46" ry="85" fill="#2E9E55"/>
+    <ellipse cx="0" cy="70" rx="38" ry="76" fill="none" stroke="#7BD88F" stroke-width="1.5" stroke-dasharray="3 5"/>
+    <ellipse cx="0" cy="55" rx="28" ry="38" fill="#FFBE0B"/>
+    <ellipse cx="0" cy="55" rx="20" ry="28" fill="#0B8A92"/>
+    <ellipse cx="0" cy="52" rx="11" ry="16" fill="#1F3FA8"/>
+    <ellipse cx="0" cy="50" rx="5" ry="7" fill="#120F33"/>
+  </g>
+  <rect width="1200" height="460" fill="url(#shade)"/>
+</svg>`;
+
+function loadScores(){ try{ return JSON.parse(localStorage.getItem("gita-scores")||"{}"); }catch(e){ return {}; } }
+function saveScore(id,score){ try{ const s=loadScores(); if(!s[id]||score>s[id]) s[id]=score; localStorage.setItem("gita-scores",JSON.stringify(s)); }catch(e){} }
+function starsHTML(n,total=4){ let h=""; for(let i=0;i<total;i++) h+= i<n ? "★" : '<span class="off">★</span>'; return h; }
+const colorVars = m => `--c1:${m.c1};--c2:${m.c2};--c3:${m.c3}`;
+
+const app = document.getElementById("app");
+const toastEl = document.getElementById("toast");
+function toast(msg){ toastEl.textContent=msg; toastEl.classList.add("show"); clearTimeout(toast._t); toast._t=setTimeout(()=>toastEl.classList.remove("show"),2600); }
+const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function speak(text){
+  if(!("speechSynthesis" in window)){ toast("Your browser doesn’t support read-aloud."); return; }
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang="hi-IN"; u.rate=0.75;
+  const voices = speechSynthesis.getVoices();
+  const v = voices.find(v=>/^hi/i.test(v.lang)) || voices.find(v=>/^(sa|mr|ne)/i.test(v.lang));
+  if(v) u.voice=v; else if(voices.length) toast("No Hindi voice found on this device — pronunciation may differ.");
+  speechSynthesis.speak(u);
+}
+
+function confetti(){
+  if(reduced()) return;
+  const box=document.createElement("div"); box.className="confetti";
+  const cols=["#FF7A00","#E8457E","#2F6FE4","#FFBE0B","#2E9E55","#7A3DC0"];
+  for(let i=0;i<90;i++){
+    const p=document.createElement("i");
+    p.style.left=Math.random()*100+"vw";
+    p.style.background=cols[i%cols.length];
+    p.style.animationDuration=(1.8+Math.random()*1.8)+"s";
+    p.style.animationDelay=(Math.random()*.6)+"s";
+    p.style.transform=`rotate(${Math.random()*360}deg)`;
+    box.appendChild(p);
+  }
+  document.body.appendChild(box);
+  setTimeout(()=>box.remove(),4500);
+}
+
+function leafHTML(v,{actions=true}={}){
+  return `<div class="leaf">
+    <i class="thread" aria-hidden="true"></i>
+    <div class="vnum">Chapter ${v.ch} · Verse ${v.v}</div>
+    <p class="shloka" lang="sa">${v.shloka}</p>
+    <p class="translit" lang="sa-Latn" ${actions?'id="translit"':''}>${v.translitHTML}</p>
+    ${actions?`<div class="leaf-actions">
+      <button class="leaf-btn" data-act="speak">🔊 Listen</button>
+      <button class="leaf-btn soft" data-act="translit">Hide transliteration</button>
+    </div>`:""}
+  </div>`;
+}
+
+function renderHome(){
+  const scores = loadScores();
+  if(!VERSES.length){ app.innerHTML=`<section class="hero">${SCENE}<div class="hero-text"><h1><small>Learn the Bhagavad Gita</small>Gita Pathshala</h1><p>The first verse arrives soon. Come back tomorrow!</p></div></section>`; return; }
+  const featured = VERSES[VERSES.length-1];
+  const earned = Object.values(scores).reduce((a,b)=>a+b,0);
+  const recent = VERSES.slice(-6).reverse();
+  const byCh = {}; VERSES.forEach(v=>(byCh[v.ch]=byCh[v.ch]||[]).push(v));
+  const tile = v=>{const m=META[v.id];return `<li><a class="tile" style="${colorVars(m)}" href="#verse-${v.id}">
+      <span class="ico" aria-hidden="true">${m.icon}</span>
+      <span class="vn">${v.ch}.${v.v}</span>
+      <span class="tt">${v.theme}</span>
+      <span class="ts">Day ${v.order} · Chapter ${v.ch} · ${v.chName}</span>
+      <span class="foot"><span class="stars" aria-label="${scores[v.id]||0} of 4 stars">${starsHTML(scores[v.id]||0)}</span><span class="go">${scores[v.id]?"Play again":"Start"}</span></span>
+    </a></li>`};
+  app.innerHTML = `
+  <section class="hero">
+    ${SCENE}
+    <div class="hero-text">
+      <h1><small>Learn the Bhagavad Gita</small>Gita Pathshala</h1>
+      <p>One new verse every day — with stories, examples and quizzes for kids and everyone. Day ${featured.order} of ${TOTAL}.</p>
+      <a class="btn" href="#verse-${featured.id}">Today’s verse</a>
+    </div>
+  </section>
+  <section class="featured">
+    ${leafHTML(featured,{actions:false})}
+    <p class="cap">Today: “${featured.theme}” — Gita ${featured.ch}.${featured.v}</p>
+  </section>
+  <section class="about">
+    <div>
+      <h2>What is the Gita?</h2>
+      <p>About 5,000 years ago, the great Mahabharata war was about to begin at Kurukshetra. The brave warrior Arjuna saw his own family on the other side, lost heart, and refused to fight.</p>
+      <p>His charioteer and best friend, <b>Lord Krishna</b>, then shared the wisdom we now call the <b>Bhagavad Gita</b> — how to be brave, do your best, and stay calm. It works just as well in a classroom today!</p>
+    </div>
+    <ul class="facts">
+      <li><b>18</b><small>chapters</small></li>
+      <li><b>700</b><small>verses</small></li>
+      <li><b>2</b><small>friends: Krishna & Arjuna</small></li>
+    </ul>
+  </section>
+  <h2 class="h2">Latest verses</h2>
+  <p class="sub">Finish each quiz to collect stars — you have <b>${earned} of ${VERSES.length*4}</b> ★ so far!</p>
+  <ul class="tiles">${recent.map(tile).join("")}</ul>
+  <h2 class="h2">All verses so far</h2>
+  <p class="sub">${VERSES.length} of ${TOTAL} verses published. A new one arrives every day.</p>
+  <div class="chapters">${Object.keys(byCh).map(ch=>`<details class="chap"${+ch===featured.ch?" open":""}><summary>Chapter ${ch} · ${byCh[ch][0].chName} <span>${byCh[ch].length} verses</span></summary><div class="chips">${byCh[ch].map(v=>`<a href="#verse-${v.id}" title="${v.theme}">${v.ch}.${v.v}${scores[v.id]?" ★":""}</a>`).join("")}</div></details>`).join("")}</div>`;
+  document.title="Gita Pathshala – Bhagavad Gita for Kids & Everyone";
+}
+
+function card(i,body){
+  const [key,title,sub,icon,c,ct] = SECTIONS[i];
+  return `<section class="card" id="s-${key}" style="--c:${c};--ct:${ct}">
+    <div class="card-h"><span class="badge" aria-hidden="true">${icon}</span><h2>${title}<small>${sub}</small></h2><span class="step">${i+1} / 10</span></div>
+    <div class="card-b">${body}</div>
+  </section>`;
+}
+
+function renderVerse(v){
+  const m=META[v.id];
+  const idx = VERSES.indexOf(v);
+  const prev = VERSES[idx-1], next = VERSES[idx+1];
+  app.innerHTML = `
+  <section class="vhero" style="${colorVars(m)}">
+    <div class="vhero-top">
+      <span class="ico" aria-hidden="true">${m.icon}</span>
+      <div><div class="meta">Chapter ${v.ch} · ${v.chName} · Verse ${v.v}</div><h1>${v.theme}</h1></div>
+    </div>
+    ${leafHTML(v)}
+  </section>
+  <nav class="secnav" aria-label="Parts of this verse">
+    ${SECTIONS.map(([k,,,icon,c,ct,short])=>`<button data-go="${k}" style="--c:${c};--ct:${ct}">${icon} ${short}</button>`).join("")}
+  </nav>
+  ${card(0,`<p>Read it slowly, out loud. Tap <b>🔊 Listen</b> on the palm leaf above to hear it, and use the transliteration below the Sanskrit if you can’t read Devanagari yet.</p><p>The Gita was spoken in Sanskrit, one of the oldest languages in the world. Its verses have a steady rhythm, which makes them easy to chant and remember.</p>`)}
+  ${card(1,`<span class="quote-mark" aria-hidden="true">“</span><p class="meaning hi" lang="hi">${v.hindi}</p>`)}
+  ${card(2,`<span class="quote-mark" aria-hidden="true">“</span><p class="meaning">${v.english}</p>`)}
+  ${card(3,v.deeper.map(p=>`<p>${p}</p>`).join(""))}
+  ${card(4,`<div class="words">${v.words.map(([w,t,e])=>`<div class="word"><span class="w" lang="sa">${w}</span><span class="t" lang="sa-Latn">${t}</span><span class="e">${e}</span></div>`).join("")}</div>`)}
+  ${card(5,`<div class="timeline">${v.background.map(p=>`<p>${p}</p>`).join("")}</div>`)}
+  ${card(6,`<ul class="lessons">${v.lessons.map(([t,d])=>`<li><b>${t}</b>${d}</li>`).join("")}</ul>`)}
+  ${card(7,`<div class="examples">${v.examples.map(([ic,t,d],k)=>`<div class="ex"><div class="top"><span class="e-ico" aria-hidden="true">${ic}</span><b>${t}</b><span class="n">#${k+1}</span></div><p>${d}</p></div>`).join("")}</div>`)}
+  ${card(8,`<div class="story"><div class="story-art" style="${colorVars(m)}" aria-hidden="true">${m.storyIcon}</div><article><h3>${v.story.title}</h3>${v.story.paras.map((p,k)=>`<p${k===0?' class="first"':''}>${p}</p>`).join("")}<p class="moral"><span aria-hidden="true">💡</span><span>${v.story.moral}</span></p></article></div>`)}
+  ${card(9,`<div id="quiz"></div>`)}
+  <div class="pager">
+    ${prev?`<a class="btn alt" href="#verse-${prev.id}">← Verse ${prev.ch}.${prev.v}</a>`:`<a class="btn alt" href="#home">← All verses</a>`}
+    ${next?`<a class="btn" href="#verse-${next.id}">Next: ${next.ch}.${next.v} →</a>`:`<a class="btn" href="#home">See all verses</a>`}
+  </div>`;
+  document.title=`Gita ${v.ch}.${v.v} – ${v.theme}`;
+
+  app.querySelector('[data-act="speak"]').onclick=()=>speak(v.speak);
+  const tBtn = app.querySelector('[data-act="translit"]');
+  tBtn.onclick=()=>{ const t=document.getElementById("translit"); const hidden=t.style.display==="none"; t.style.display=hidden?"":"none"; tBtn.textContent=hidden?"Hide transliteration":"Show transliteration"; };
+
+  const nav = app.querySelector(".secnav");
+  nav.addEventListener("click",e=>{
+    const b=e.target.closest("button[data-go]"); if(!b) return;
+    const el=document.getElementById("s-"+b.dataset.go);
+    const offset = document.querySelector(".topbar").offsetHeight + nav.offsetHeight + 12;
+    window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - offset, behavior: reduced()?"auto":"smooth"});
+  });
+  setupSpy(nav);
+  runQuiz(v);
+  window.scrollTo(0,0);
+}
+
+let spyObs;
+function setupSpy(nav){
+  if(spyObs) spyObs.disconnect();
+  if(!("IntersectionObserver" in window)) return;
+  spyObs = new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(en.isIntersecting){
+        const k=en.target.id.slice(2);
+        nav.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.go===k));
+        const on=nav.querySelector("button.on"); if(on) nav.scrollTo({left:on.offsetLeft-16,behavior:"smooth"});
+      }
+    });
+  },{rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".card").forEach(s=>spyObs.observe(s));
+}
+
+function runQuiz(v){
+  const box=document.getElementById("quiz");
+  let i=0, score=0, marks=[];
+  const total=v.quiz.length;
+  const dots=()=>`<div class="q-dots" aria-hidden="true">${v.quiz.map((_,k)=>`<i class="${k<i?(marks[k]?'done':'miss'):k===i?'cur':''}"></i>`).join("")}</div>`;
+  function show(){
+    const q=v.quiz[i];
+    box.innerHTML=`
+      <div class="q-top"><span>Question ${i+1} of ${total}</span>${dots()}</div>
+      <p class="q-text">${q.q}</p>
+      <div class="opts">${q.o.map((o,k)=>`<button class="opt" data-k="${k}"><span class="L"><span>${String.fromCharCode(65+k)}</span></span>${o}</button>`).join("")}</div>
+      <div id="fb"></div>`;
+    box.querySelectorAll(".opt").forEach(b=>b.onclick=()=>answer(+b.dataset.k));
+  }
+  function answer(k){
+    const q=v.quiz[i];
+    const btns=box.querySelectorAll(".opt");
+    btns.forEach(b=>b.disabled=true);
+    btns[q.a].classList.add("right");
+    const ok=k===q.a; marks[i]=ok;
+    if(ok) score++; else btns[k].classList.add("wrong");
+    document.getElementById("fb").innerHTML=`
+      <div class="fb ${ok?"good":"nope"}"><b>${ok?"🎉 Well done! That’s right.":"🙂 Not quite — the right answer has the ✓."}</b><br>${q.x}</div>
+      <button class="btn q-next">${i<total-1?"Next question →":"See my stars ★"}</button>`;
+    const nb=box.querySelector(".q-next"); nb.focus({preventScroll:true}); nb.onclick=()=>{ i++; i<total?show():finish(); };
+  }
+  function finish(){
+    saveScore(v.id,score);
+    const msg = score===total?["🏆","Perfect! You’re a true student of the Gita!"]:score>=total/2?["🌟","Very good! Read a little more and try again."]:["🌱","Good start! Read the cards above and play again."];
+    box.innerHTML=`<div class="result">
+      <div class="big" aria-hidden="true">${msg[0]}</div>
+      <h3>${score} of ${total} correct</h3>
+      <div class="stars" aria-label="${score} of ${total} stars">${starsHTML(score,total)}</div>
+      <p>${msg[1]}</p>
+      <button class="btn" id="again">Play again</button>
+    </div>`;
+    if(score===total) confetti();
+    document.getElementById("again").onclick=()=>{ i=0; score=0; marks=[]; show(); };
+  }
+  show();
+}
+
+function route(){
+  const h=location.hash.replace("#","");
+  if("speechSynthesis" in window) speechSynthesis.cancel();
+  if(h.startsWith("verse-")){
+    const v=VERSES.find(x=>"verse-"+x.id===h);
+    if(v){ renderVerse(v); return; }
+  }
+  renderHome(); window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+if("speechSynthesis" in window){ speechSynthesis.getVoices(); }
+route();
+</script>
+</body>
+</html>

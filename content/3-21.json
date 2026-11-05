@@ -1,0 +1,211 @@
+{
+ "id": "3-21",
+ "order": 140,
+ "ch": 3,
+ "v": 21,
+ "chName": "Karma Yoga",
+ "speaker": null,
+ "sanskrit": [
+  "यद्यदाचरति श्रेष्ठस्तत्तदेवेतरो जनः ।",
+  "स यत्प्रमाणं कुरुते लोकस्तदनुवर्तते ॥"
+ ],
+ "translit": [
+  "yad yad ācharati śhreṣhṭhas tat tad evetaro janaḥ",
+  "sa yat pramāṇaṁ kurute lokas tad anuvartate"
+ ],
+ "theme": "Others follow what you do",
+ "icon": "👣",
+ "storyIcon": "🍯",
+ "hindi": "श्रेष्ठ व्यक्ति जो-जो आचरण करता है, दूसरे लोग भी वैसा ही करते हैं। वह जो मानक (उदाहरण) बनाता है, सारा संसार उसी के पीछे चलता है।",
+ "english": "Whatever a great person does, other people do the same. Whatever standard they set by their example, the world follows.",
+ "deeper": [
+  "Arjuna was the greatest warrior of his time. If he walked away from his duty, soldiers — and people for generations — would think, “If Arjuna can run from duty, so can I.” His actions were bigger than just his own life.",
+  "People learn far more from what we <b>do</b> than from what we <b>say</b>. A parent who shouts “don’t use your phone” while scrolling teaches the opposite lesson.",
+  "In the next verse (3.22), Krishna says that even he — who has nothing left to gain — keeps working, because people follow his path. And here is the beautiful part: everyone is a “shreshtha” for someone. A little brother, a younger cousin, a classmate — someone is always watching you."
+ ],
+ "words": [
+  [
+   "यत् यत्",
+   "yat yat",
+   "whatever"
+  ],
+  [
+   "आचरति",
+   "ācarati",
+   "does, practises"
+  ],
+  [
+   "श्रेष्ठः",
+   "śreṣṭhaḥ",
+   "a great / leading person"
+  ],
+  [
+   "तत् तत् एव",
+   "tat tat eva",
+   "that very same"
+  ],
+  [
+   "इतरः जनः",
+   "itaraḥ janaḥ",
+   "other people"
+  ],
+  [
+   "सः",
+   "saḥ",
+   "they, he"
+  ],
+  [
+   "यत् प्रमाणम्",
+   "yat pramāṇam",
+   "whatever standard"
+  ],
+  [
+   "कुरुते",
+   "kurute",
+   "sets"
+  ],
+  [
+   "लोकः",
+   "lokaḥ",
+   "the world"
+  ],
+  [
+   "अनुवर्तते",
+   "anuvartate",
+   "follows"
+  ]
+ ],
+ "background": [
+  "Chapter 3 begins with Arjuna confused: “If knowledge is better than action, why are you pushing me into this terrible war?” (3.1–2).",
+  "Krishna explains that no one can stay without action even for a moment (3.5), and that work done as an offering doesn’t bind us. He gives the example of King Janaka, who reached perfection while doing his duties, and tells Arjuna to act for <i>lokasangraha</i> — the good and guidance of the world (3.20). This verse explains why that matters."
+ ],
+ "lessons": [
+  [
+   "Lead by example, not by lecture.",
+   "Your actions speak louder than your advice."
+  ],
+  [
+   "Someone is always learning from you.",
+   "Younger siblings and friends copy more than you think."
+  ],
+  [
+   "Small habits shape a whole group.",
+   "One person throwing litter — or picking it up — changes a class."
+  ],
+  [
+   "Choose your role models carefully.",
+   "You become like the people you follow."
+  ],
+  [
+   "More position, more responsibility.",
+   "Captains, monitors and elders set the standard for everyone."
+  ]
+ ],
+ "examples": [
+  [
+   "👧",
+   "Little sister",
+   "Your little sister copies everything you do. If you eat your vegetables, she will too — without any fuss."
+  ],
+  [
+   "🗑️",
+   "Class monitor",
+   "When the class monitor puts rubbish in the dustbin himself, slowly the whole class starts doing the same."
+  ],
+  [
+   "🙏",
+   "Respecting elders",
+   "When you touch your grandparents’ feet as they arrive, your little brother learns to do it without being told."
+  ],
+  [
+   "⚽",
+   "Team captain",
+   "Even after losing, the captain shook hands with the other team. Next time, the whole team did the same."
+  ],
+  [
+   "📵",
+   "Phones at mealtime",
+   "You kept your phone away while eating and chatted instead. The next day, your friend did the same."
+  ],
+  [
+   "🚦",
+   "The red light",
+   "Dad always stops at a red light, even when the road is empty. Children grow up learning exactly that."
+  ],
+  [
+   "🤝",
+   "The new kid",
+   "A new student was sitting alone. You sat next to him — and soon the other kids joined too."
+  ],
+  [
+   "💬",
+   "Group chat",
+   "Someone was being made fun of in the group chat. You wrote, “That’s not okay” — and the others stopped too."
+  ]
+ ],
+ "story": {
+  "title": "Gandhiji and the Jaggery",
+  "paras": [
+   "A mother brought her son to Mahatma Gandhi. “Bapu, my son eats too much jaggery. The doctor has told him to stop, but he won’t listen to me. If you tell him, he will listen.”",
+   "Gandhiji looked at the boy and said, “Come back after fifteen days.” The mother was surprised, but she went home.",
+   "Fifteen days later, they came back. Gandhiji gently held the boy’s hand and said, “Son, eating too much jaggery isn’t good for your health. Will you give it up?” The boy smiled and nodded.",
+   "The mother asked, “Bapu, you could have said this the first day!” Gandhiji replied, “That day, I was eating jaggery myself. How could I ask someone else to do what I wasn’t doing? In these fifteen days, I gave it up first.”"
+  ],
+  "moral": "Lesson: An example is greater than advice. People do what we do."
+ },
+ "quiz": [
+  {
+   "q": "What effect does a great person’s behaviour have on others?",
+   "o": [
+    "No effect",
+    "People start doing the same",
+    "People do the opposite",
+    "People get upset"
+   ],
+   "a": 1,
+   "x": "“Tat tad evetaro janaḥ” — other people do the very same."
+  },
+  {
+   "q": "In Chapter 3, which king did Krishna mention as an example of reaching perfection through action?",
+   "o": [
+    "King Dasharatha",
+    "King Harishchandra",
+    "King Janaka",
+    "King Vikramaditya"
+   ],
+   "a": 2,
+   "x": "Verse 3.20 gives the example of King Janaka."
+  },
+  {
+   "q": "Why didn’t Gandhiji advise the boy on the first day?",
+   "o": [
+    "He was busy",
+    "He first had to give up jaggery himself",
+    "He liked jaggery too much",
+    "The boy fell asleep"
+   ],
+   "a": 1,
+   "x": "Do it yourself first, then ask others — that’s the lesson of 3.21."
+  },
+  {
+   "q": "What does “pramāṇam” mean here?",
+   "o": [
+    "A standard or example",
+    "A reward",
+    "Fear",
+    "Punishment"
+   ],
+   "a": 0,
+   "x": "People follow the standard a great person sets."
+  }
+ ],
+ "reel": {
+  "hook": "Did you know someone is always copying you?",
+  "example_index": 0,
+  "lesson": "Be the example you want others to follow.",
+  "quiz_index": 0,
+  "caption": "Your little brother is watching 👣\nKrishna on why your actions matter."
+ },
+ "approved": true,
+ "source": "hand-written"
+}

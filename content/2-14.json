@@ -1,0 +1,211 @@
+{
+ "id": "2-14",
+ "order": 61,
+ "ch": 2,
+ "v": 14,
+ "chName": "Sankhya Yoga",
+ "speaker": null,
+ "sanskrit": [
+  "मात्रास्पर्शास्तु कौन्तेय शीतोष्णसुखदुःखदाः ।",
+  "आगमापायिनोऽनित्यास्तांस्तितिक्षस्व भारत ॥"
+ ],
+ "translit": [
+  "mātrā-sparśhās tu kaunteya śhītoṣhṇa-sukha-duḥkha-dāḥ",
+  "āgamāpāyino ’nityās tans-titikṣhasva bhārata"
+ ],
+ "theme": "Joy and pain come and go — stay steady",
+ "icon": "🌦️",
+ "storyIcon": "💍",
+ "hindi": "हे कुन्तीपुत्र! इन्द्रियों का विषयों से संपर्क होने पर सर्दी-गर्मी और सुख-दुःख होते हैं। ये आते-जाते रहते हैं, हमेशा नहीं रहते। हे भारत! इन्हें धैर्य से सहन करो।",
+ "english": "O son of Kunti, when the senses meet their objects, they bring cold and heat, pleasure and pain. These come and go; they don’t last. So bear them patiently, O Bharata.",
+ "deeper": [
+  "Our senses — eyes, ears, skin, tongue, nose — keep touching the world, and every touch creates a feeling. Cold water feels painful in winter but wonderful in summer. The water is the same; the feeling changed. So feelings depend on time and situation — they are not the permanent truth.",
+  "Krishna’s word is <b>titiksha</b> — calm endurance. It doesn’t mean hiding or crushing feelings. It means noticing the feeling, remembering “this will pass,” and not letting it make your decisions.",
+  "In the very next verse (2.15), Krishna says that a person who stays steady in both pleasure and pain becomes fit for the highest freedom. Steadiness is a strength that can be trained, like a muscle."
+ ],
+ "words": [
+  [
+   "मात्रास्पर्शाः",
+   "mātrā-sparśāḥ",
+   "contact of senses with objects"
+  ],
+  [
+   "तु",
+   "tu",
+   "indeed"
+  ],
+  [
+   "कौन्तेय",
+   "kaunteya",
+   "O son of Kunti"
+  ],
+  [
+   "शीत-उष्ण",
+   "śīta-uṣṇa",
+   "cold and heat"
+  ],
+  [
+   "सुख-दुःख-दाः",
+   "sukha-duḥkha-dāḥ",
+   "giving pleasure and pain"
+  ],
+  [
+   "आगम-अपायिनः",
+   "āgama-apāyinaḥ",
+   "coming and going"
+  ],
+  [
+   "अनित्याः",
+   "anityāḥ",
+   "not permanent"
+  ],
+  [
+   "तान्",
+   "tān",
+   "them"
+  ],
+  [
+   "तितिक्षस्व",
+   "titikṣasva",
+   "endure patiently"
+  ],
+  [
+   "भारत",
+   "bhārata",
+   "O descendant of Bharata"
+  ]
+ ],
+ "background": [
+  "Arjuna has just put down his bow, crying that he cannot fight his own family. Krishna smiles gently and begins his teaching (2.10).",
+  "He says the wise do not grieve for the living or the dead (2.11). There was never a time when you, I, or these kings did not exist (2.12). Just as the soul passes through childhood, youth and old age in this body, it moves on to another body (2.13). Now Krishna explains why the pain Arjuna feels should not knock him off his path."
+ ],
+ "lessons": [
+  [
+   "Bad days end.",
+   "No sadness stays forever — hold on, it will pass."
+  ],
+  [
+   "Good days end too.",
+   "Enjoy success, but don’t become proud — keep working."
+  ],
+  [
+   "Don’t decide in a storm.",
+   "Big decisions made in anger or fear are usually the wrong ones."
+  ],
+  [
+   "Patience is a muscle.",
+   "Each small discomfort you handle calmly makes you stronger."
+  ],
+  [
+   "Change is natural.",
+   "Like the seasons, life keeps moving. Flow with it instead of fighting it."
+  ]
+ ],
+ "examples": [
+  [
+   "🌧️",
+   "Picnic cancelled",
+   "The school picnic was cancelled because of rain. It felt sad, but there was another chance the next week — and that day was sunny!"
+  ],
+  [
+   "💉",
+   "An injection",
+   "Getting an injection at the doctor’s is scary, but the pain lasts only a few seconds. That’s “āgamāpāyinaḥ” — it came and it went."
+  ],
+  [
+   "🏆",
+   "First in class",
+   "Priya came first in her class. She celebrated, but didn’t become proud — she started working hard again for the next exam."
+  ],
+  [
+   "😠",
+   "A fight with a friend",
+   "Rohan had a fight with his friend. Today he is angry, but tomorrow he can calm down and talk. Anger is just a visitor too."
+  ],
+  [
+   "🥶",
+   "A cold morning",
+   "Getting up for school on a winter morning feels hard, but you go anyway. That is titiksha — the power to endure!"
+  ],
+  [
+   "📉",
+   "Low marks",
+   "After scoring low on one test, it felt like everything was over. But one result doesn’t decide your whole life."
+  ],
+  [
+   "🏠",
+   "A new school",
+   "In his first week at a new school in a new city, Sahil felt lonely. Within a month, he had three close friends."
+  ],
+  [
+   "🎮",
+   "Losing a game",
+   "After losing a game, you feel like throwing your phone. Take a deep breath — the feeling will pass in two minutes, but a broken phone won’t fix itself!"
+  ]
+ ],
+ "story": {
+  "title": "This Too Shall Pass",
+  "paras": [
+   "There was once a king who became extremely happy or extremely sad over small things. One day he told his ministers, “Give me words that will stop me from becoming proud in good times and from breaking down in bad times.”",
+   "Everyone was puzzled. Then an old sage gave the king a ring and said, “There is a note inside. Open it only when you have no way out.”",
+   "A few years later, enemies attacked. The king lost the battle and hid in a cave in the forest. The sound of horses was coming closer. In panic, he opened the ring. The note said: “This too shall pass.” The king became calm. Slowly, the sound of horses faded away.",
+   "He gathered his army again and won back his kingdom. At the victory celebration, while he was bursting with pride, his eyes fell on the note once more — “This too shall pass.” The king smiled and became humble."
+  ],
+  "moral": "Lesson: Happiness and sadness are both guests — they come and they go. Keep your mind steady."
+ },
+ "quiz": [
+  {
+   "q": "According to this verse, what are joy and pain like?",
+   "o": [
+    "They last forever",
+    "They come and go",
+    "They happen only to kings",
+    "They happen only to grown-ups"
+   ],
+   "a": 1,
+   "x": "“Āgamāpāyino ’nityāḥ” — they come and go; they are not permanent."
+  },
+  {
+   "q": "What does “titikṣasva” mean?",
+   "o": [
+    "Run away",
+    "Get angry",
+    "Bear it patiently",
+    "Go to sleep"
+   ],
+   "a": 2,
+   "x": "Titiksha is the strength to stay calm and endure."
+  },
+  {
+   "q": "Who is called “Kaunteya” in this verse?",
+   "o": [
+    "Arjuna",
+    "Duryodhana",
+    "Dhritarashtra",
+    "Sanjaya"
+   ],
+   "a": 0,
+   "x": "Arjuna was the son of Kunti, so he is called Kaunteya."
+  },
+  {
+   "q": "Your team lost the match and you feel very sad. What would the Gita say?",
+   "o": [
+    "Quit playing forever",
+    "Blame others",
+    "This feeling will pass too — be patient and try again",
+    "Keep crying all day"
+   ],
+   "a": 2,
+   "x": "Sadness also comes and goes — bear it and move forward."
+  }
+ ],
+ "reel": {
+  "hook": "Having a bad day? This 5,000-year-old line will help.",
+  "example_index": 4,
+  "lesson": "Joy and sadness are guests. They come, and they go.",
+  "quiz_index": 3,
+  "caption": "Bad days end. Good days end too. 🌦️\nKrishna’s secret to a steady mind."
+ },
+ "approved": true,
+ "source": "hand-written"
+}
