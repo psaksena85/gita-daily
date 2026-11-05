@@ -1,5 +1,5 @@
 {
-  "start_date": "2026-11-10",
+  "start_date": "2026-11-04",
   "_start_date": "Day 1 (verse 1.1) is posted on this date. Each following day posts the next verse in order.",
   "timezone": "Asia/Kolkata",
   "buffer_days": 3,
@@ -7,20 +7,20 @@
   "require_approval": false,
   "_require_approval": "If true, a verse is only posted after you set \"approved\": true in its content file.",
   "channel_name": "Gita Pathshala",
-  "site_url": "https://YOUR-GITHUB-USERNAME.github.io/gita-daily/",
+  "site_url": "https://psaksena85.github.io/gita-daily/",
   "claude_model": "claude-sonnet-5-5",
   "voice_english": "en-IN-NeerjaNeural",
   "voice_sanskrit": "hi-IN-SwaraNeural",
   "music_volume": 0.12,
   "youtube": {
-    "enabled": true,
+    "enabled": false,
     "privacy": "public",
     "made_for_kids": false,
     "category_id": "27",
     "_category_id": "27 = Education"
   },
   "instagram": {
-    "enabled": true,
+    "enabled": false,
     "api_version": "v25.0",
     "share_to_feed": true
   },
