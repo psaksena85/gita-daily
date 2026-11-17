@@ -1,0 +1,221 @@
+{
+ "id": "1-17",
+ "order": 17,
+ "ch": 1,
+ "v": 17,
+ "chName": "Arjuna Vishada Yoga",
+ "speaker": null,
+ "sanskrit": [
+  "काश्यश्च परमेष्वासः शिखण्डी च महारथः ।",
+  "धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः ॥"
+ ],
+ "translit": [
+  "kāśhyaśhcha parameṣhvāsaḥ śhikhaṇḍī cha mahā-rathaḥ",
+  "dhṛiṣhṭadyumno virāṭaśhcha sātyakiśh chāparājitaḥ"
+ ],
+ "theme": "Every Brave Helper Has a Place",
+ "icon": "🐚",
+ "storyIcon": "🏰",
+ "hindi": "काशी के राजा, जो बहुत बड़े धनुर्धर थे, महारथी शिखण्डी, धृष्टद्युम्न, राजा विराट और कभी न हारने वाले सात्यकि भी अपने-अपने शंख बजाते हैं।",
+ "english": "The king of Kashi, a great archer, and Shikhandi, the mighty chariot warrior, along with Dhrishtadyumna, Virata, and Satyaki the unconquered, all blew their conches too.",
+ "deeper": [
+  "Sanjaya is describing the Pandava army to the blind king Dhritarashtra. After naming the Pandava brothers and their conches, he now lists more warriors on their side. It sounds like a list of names, but it shows that a great effort is never made by one person alone.",
+  "Each name carries a quality. The king of Kashi is called <i>parameshvasa</i>, a supreme archer. Shikhandi and Dhrishtadyumna are <i>maharathas</i>, great chariot fighters. Virata is the king who once gave the Pandavas shelter. Satyaki is <i>aparajita</i>, never defeated. Each one brings a different strength to the same team.",
+  "For us, the lesson is simple: <b>a good team is made of many different people</b>. The loud ones, the quiet ones, the skilled ones and the loyal ones all matter. When we notice and respect everyone’s part, we become stronger together."
+ ],
+ "words": [
+  [
+   "काश्यः",
+   "kāśhyaḥ",
+   "the king of Kashi"
+  ],
+  [
+   "च",
+   "cha",
+   "and"
+  ],
+  [
+   "परमेष्वासः",
+   "parameṣhvāsaḥ",
+   "the supreme archer"
+  ],
+  [
+   "शिखण्डी",
+   "śhikhaṇḍī",
+   "Shikhandi"
+  ],
+  [
+   "च",
+   "cha",
+   "and"
+  ],
+  [
+   "महारथः",
+   "mahā-rathaḥ",
+   "a great chariot warrior"
+  ],
+  [
+   "धृष्टद्युम्नः",
+   "dhṛiṣhṭadyumnaḥ",
+   "Dhrishtadyumna"
+  ],
+  [
+   "विराटः",
+   "virāṭaḥ",
+   "Virata"
+  ],
+  [
+   "च",
+   "cha",
+   "and"
+  ],
+  [
+   "सात्यकिः",
+   "sātyakiḥ",
+   "Satyaki"
+  ],
+  [
+   "च",
+   "cha",
+   "and"
+  ],
+  [
+   "अपराजितः",
+   "aparājitaḥ",
+   "the unconquered one"
+  ]
+ ],
+ "background": [
+  "The Kurukshetra war is about to begin. Blind King Dhritarashtra has asked his minister Sanjaya what is happening on the battlefield (1.1). Sanjaya describes how the Kaurava side blew their conches and made a great noise (1.13). Then Krishna and Arjuna, seated in their great chariot, blew their divine conches (1.14).",
+  "Next, Sanjaya names the conches of Krishna, Arjuna, Bhima, Yudhishthira, Nakula and Sahadeva (1.15–1.16). In this verse he goes on to name more brave helpers of the Pandava side, who also sounded their conches, as if saying, “We are ready too.”"
+ ],
+ "lessons": [
+  [
+   "Teamwork matters",
+   "A big task is done well when many people share it, each in their own way."
+  ],
+  [
+   "Different strengths, one goal",
+   "An archer, a charioteer and a loyal friend each give something special to the team."
+  ],
+  [
+   "Notice everyone",
+   "Even names in a long list stand for real people whose effort counts."
+  ],
+  [
+   "Loyalty is a strength",
+   "Standing by a friend when it is hard shows a brave heart."
+  ],
+  [
+   "Be ready, not boastful",
+   "The conch call was a sign of readiness; true readiness comes from preparation and a steady mind."
+  ]
+ ],
+ "examples": [
+  [
+   "🏏",
+   "Cricket team",
+   "In Aarav’s gully cricket team, one boy bowls fast, one fields well and one keeps the score. They win because everyone does their own part."
+  ],
+  [
+   "🎭",
+   "School play",
+   "Meera has no speaking role, but she paints the backdrop. The whole class knows the play would not look good without her."
+  ],
+  [
+   "🧹",
+   "Cleaning day",
+   "On Sunday, Rohan sweeps, his sister dusts and Dadi gives directions. The house shines because all of them helped."
+  ],
+  [
+   "📚",
+   "Group project",
+   "Four friends make a chart on the solar system. One draws, one writes, one finds facts and one explains it in class."
+  ],
+  [
+   "🎉",
+   "Diwali preparations",
+   "Ananya helps hang lamps while her brother arranges rangoli colours. Each small job adds to the festival’s joy."
+  ],
+  [
+   "🚌",
+   "School bus friends",
+   "Karan always keeps a seat for his friend Imran who gets on later. This small act of loyalty makes Imran feel safe and welcome."
+  ],
+  [
+   "🏑",
+   "Hockey match",
+   "Simran is not the top scorer, but she defends the goal calmly. Her team is happy to have her."
+  ],
+  [
+   "🤝",
+   "New classmate",
+   "When Divya joins a new school, Pooja shares her notes and introduces her to others. Soon Divya becomes part of the team too."
+  ]
+ ],
+ "story": {
+  "title": "King Virata Gives Shelter",
+  "paras": [
+   "In the Mahabharata, the Pandavas had to spend twelve years in the forest and one more year living in disguise, so that no one would recognise them. For that last year they chose the kingdom of Matsya, ruled by King Virata.",
+   "Yudhishthira became the king’s companion in games, Bhima worked in the kitchen, and Arjuna taught music and dance to the princess. Nakula cared for the horses, Sahadeva looked after the cows, and Draupadi served the queen. King Virata did not know who they were, but he gave them a home and kind treatment.",
+   "When the year ended, the Pandavas revealed who they were. Virata was amazed and happy that he had sheltered such great people. He gave his daughter Uttara in marriage to Arjuna’s son Abhimanyu and stood by the Pandavas as a loyal friend.",
+   "That is why Virata’s name appears in this verse. When the time of the great war came, the king who had once offered shelter stood with the Pandavas and blew his conch beside them."
+  ],
+  "moral": "Lesson: Kindness and loyalty in quiet times become real strength when the hard moment arrives."
+ },
+ "quiz": [
+  {
+   "q": "Whom is Sanjaya describing in this verse?",
+   "o": [
+    "Brave warriors on the Pandava side",
+    "Only the Kaurava army",
+    "Krishna’s cows",
+    "The people of Hastinapura"
+   ],
+   "a": 0,
+   "x": "Sanjaya continues naming the Pandava-side warriors who blew their conches."
+  },
+  {
+   "q": "Which king had once sheltered the Pandavas during their year in disguise?",
+   "o": [
+    "Shikhandi",
+    "Virata",
+    "Satyaki",
+    "Dhritarashtra"
+   ],
+   "a": 1,
+   "x": "King Virata of Matsya gave the Pandavas shelter in their thirteenth year."
+  },
+  {
+   "q": "What does “aparajita” mean?",
+   "o": [
+    "Very loud",
+    "Very young",
+    "Unconquered",
+    "Very rich"
+   ],
+   "a": 2,
+   "x": "Satyaki is called aparajita, meaning never defeated."
+  },
+  {
+   "q": "What is the main lesson of this verse for us?",
+   "o": [
+    "Only one strong person is needed",
+    "Many people with different strengths make a good team",
+    "Names do not matter",
+    "Winning matters more than friendship"
+   ],
+   "a": 1,
+   "x": "The long list shows that every helper has a place in a great effort."
+  }
+ ],
+ "reel": {
+  "hook": "Can one person do a big job alone? Think again!",
+  "example_index": 0,
+  "lesson": "Every teammate has a special strength, and a good team respects them all.",
+  "quiz_index": 3,
+  "caption": "Great things are never done alone 🐚\nIn Gita 1.17, many brave helpers stand together, each with their own strength.\nWho is on your team today? 💛"
+ },
+ "approved": true,
+ "source": "generated with claude-sonnet-5-5"
+}
