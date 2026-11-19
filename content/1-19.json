@@ -1,0 +1,221 @@
+{
+ "id": "1-19",
+ "order": 19,
+ "ch": 1,
+ "v": 19,
+ "chName": "Arjuna Vishada Yoga",
+ "speaker": null,
+ "sanskrit": [
+  "स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत् ।",
+  "नभश्च पृथिवीं चैव तुमुलो व्यनुनादयन् ॥"
+ ],
+ "translit": [
+  "sa ghoṣho dhārtarāṣhṭrāṇāṁ hṛidayāni vyadārayat",
+  "nabhaśhcha pṛithivīṁ chaiva tumulo nunādayan"
+ ],
+ "theme": "The Sound That Shook Hearts",
+ "icon": "🐚",
+ "storyIcon": "📣",
+ "hindi": "पाण्डवों के शंखों की वह भयंकर और गूँजती हुई ध्वनि आकाश और पृथ्वी दोनों को गुँजाती हुई धृतराष्ट्र के पुत्रों के हृदयों को चीर गई।",
+ "english": "That mighty, thundering sound of the Pandava conches made the sky and the earth ring, and it shook the hearts of Dhritarashtra’s sons.",
+ "deeper": [
+  "Sanjaya is telling the blind king Dhritarashtra what is happening on the battlefield. Here he describes how loud and powerful the Pandava conches sounded. Together, the many conches made one huge roar that filled the whole sky and the whole earth.",
+  "The verse says the sound <i>tore open the hearts</i> of the Kauravas. It does not say they had no courage. It shows that when many people stand together with one purpose, their united voice can be felt deep inside others. Sometimes a person’s heart trembles because they sense, somewhere inside, that their own side is not fully in the right.",
+  "For us, the lesson is gentle. Sounds, words and actions all have power. A kind, united and honest voice can lift hearts, and a harsh, angry one can break them. We can ask ourselves each day: <b>what kind of sound am I sending out into the world?</b>"
+ ],
+ "words": [
+  [
+   "सः",
+   "saḥ",
+   "that"
+  ],
+  [
+   "घोषः",
+   "ghoṣaḥ",
+   "sound, roar"
+  ],
+  [
+   "धार्तराष्ट्राणाम्",
+   "dhārtarāṣṭrāṇām",
+   "of the sons of Dhritarashtra"
+  ],
+  [
+   "हृदयानि",
+   "hṛdayāni",
+   "hearts"
+  ],
+  [
+   "व्यदारयत्",
+   "vyadārayat",
+   "shattered, tore apart"
+  ],
+  [
+   "नभः",
+   "nabhaḥ",
+   "the sky"
+  ],
+  [
+   "च",
+   "ca",
+   "and"
+  ],
+  [
+   "पृथिवीम्",
+   "pṛthivīm",
+   "the earth"
+  ],
+  [
+   "च",
+   "ca",
+   "and"
+  ],
+  [
+   "एव",
+   "eva",
+   "indeed"
+  ],
+  [
+   "तुमुलः",
+   "tumulaḥ",
+   "tumultuous, thunderous"
+  ],
+  [
+   "व्यनुनादयन्",
+   "vyanunādayan",
+   "making it resound, echoing"
+  ]
+ ],
+ "background": [
+  "The two great armies are standing ready at Kurukshetra, and Sanjaya is describing everything to King Dhritarashtra. First Bhishma blew his conch to begin the battle (1.12), and many Kaurava drums and horns joined in with a great noise (1.13). Then Krishna and Arjuna, seated in their grand chariot with white horses, blew their divine conches (1.14–1.15).",
+  "After them, one Pandava warrior after another blew a conch: Yudhishthira, Nakula, Sahadeva (1.16), the king of Kashi, Shikhandi, Dhrishtadyumna, Virata and Satyaki (1.17), and Drupada, the sons of Draupadi and Abhimanyu (1.18). Now, in verse 19, all of these conches have joined into one huge sound, and Sanjaya tells us what that sound did."
+ ],
+ "lessons": [
+  [
+   "Unity is powerful",
+   "When many people join together for one purpose, their combined strength is far greater than any single voice."
+  ],
+  [
+   "Sounds reach hearts",
+   "Words and sounds can travel deep inside people, so we should choose them with care."
+  ],
+  [
+   "Listen to your heart",
+   "When something makes our heart tremble, it is worth pausing to ask what our heart is trying to tell us."
+  ],
+  [
+   "Be steady and clear",
+   "A calm, clear and confident voice carries further than a shouting, angry one."
+  ],
+  [
+   "Right purpose gives strength",
+   "When we act with honesty and good intention, we feel steadier inside."
+  ]
+ ],
+ "examples": [
+  [
+   "📣",
+   "Cheering together",
+   "At the school sports day in Jaipur, Riya’s whole class cheered in one loud voice for their relay team. Their runner felt braver at once."
+  ],
+  [
+   "🥁",
+   "The village band",
+   "During the Ganesh festival in Pune, many dhol players beat together. The sound was so big that everyone on the street felt it in their chest."
+  ],
+  [
+   "🏏",
+   "Team spirit",
+   "Arjun’s cricket team clapped and shouted together before the match began. The other team went quiet because they could feel how united they were."
+  ],
+  [
+   "🎤",
+   "Singing as a choir",
+   "In Kavya’s school choir in Chennai, thirty children sang the same song together. Even the teachers felt their eyes fill with happiness."
+  ],
+  [
+   "💬",
+   "Words that hurt",
+   "Imran said something harsh to his friend in anger. He saw his friend’s face fall and learned that words can reach the heart like a loud sound."
+  ],
+  [
+   "🫀",
+   "A trembling heart",
+   "Before telling her mother the truth about a broken vase, Sneha felt her heart pounding. She understood that her heart was asking her to be honest."
+  ],
+  [
+   "🔔",
+   "Temple bells",
+   "When Aarav visits the temple in Varanasi, the ringing bells make his mind go quiet and still. Sound can also bring peace."
+  ],
+  [
+   "🤝",
+   "Standing up together",
+   "When a classmate was being teased in Kolkata, five friends stood beside him and spoke up together. The teasing stopped, because their united voice was strong and kind."
+  ]
+ ],
+ "story": {
+  "title": "The Cheer of Class Six",
+  "paras": [
+   "In a small school in Nashik, Class Six was about to play the tug-of-war final against Class Seven. Meera, the smallest girl in the class, felt her knees shaking. Class Seven looked big and strong.",
+   "Their teacher, Mrs. Kulkarni, gathered the children in a circle. She said, “Don’t think about their size. Think about each other.” So the children held hands and took one deep breath together.",
+   "When the whistle blew, Class Six did not shout angrily. They called out their team chant all together, in one steady voice, as they pulled. Meera felt the sound fill her chest and her fear melted away. Across the rope, a few Class Seven children looked at each other and hesitated, surprised by the roar.",
+   "Class Six did not win by a big margin, but they pulled with all their hearts, and the match was close until the end. Afterwards, Meera said, “I wasn’t afraid once we were all one voice.” The captain of Class Seven shook her hand and said, “Your cheer was louder than our muscles.”"
+  ],
+  "moral": "Lesson: A united and steady voice gives courage to those who share it, and we should always use that power with kindness."
+ },
+ "quiz": [
+  {
+   "q": "What did the sound of the Pandava conches do, according to this verse?",
+   "o": [
+    "It put the Pandavas to sleep",
+    "It shook the hearts of Dhritarashtra’s sons and echoed through sky and earth",
+    "It stopped the war",
+    "It called the rain"
+   ],
+   "a": 1,
+   "x": "The thunderous sound filled the sky and earth and shook the hearts of the Kauravas."
+  },
+  {
+   "q": "Who is telling us what happened on the battlefield?",
+   "o": [
+    "Sanjaya",
+    "Arjuna",
+    "Bhishma",
+    "Yudhishthira"
+   ],
+   "a": 0,
+   "x": "Sanjaya describes the battlefield to King Dhritarashtra."
+  },
+  {
+   "q": "What does ‘dhārtarāṣṭrāṇām’ mean?",
+   "o": [
+    "Of the Pandavas",
+    "Of the sons of Dhritarashtra",
+    "Of the sky",
+    "Of the charioteers"
+   ],
+   "a": 1,
+   "x": "It refers to Dhritarashtra’s sons, the Kauravas."
+  },
+  {
+   "q": "What is a good everyday lesson from this verse?",
+   "o": [
+    "Always shout the loudest",
+    "Never work with others",
+    "United, honest voices have great power, so use them kindly",
+    "Ignore how others feel"
+   ],
+   "a": 2,
+   "x": "The verse shows how powerful a united sound can be, which reminds us to use our voices wisely and kindly."
+  }
+ ],
+ "reel": {
+  "hook": "Can a sound really shake someone’s heart? The Gita says yes!",
+  "example_index": 0,
+  "lesson": "United, honest voices carry great power, so use yours with kindness.",
+  "quiz_index": 3,
+  "caption": "When many conches sounded as one, the whole sky and earth rang! 🐚\nOur voices have power too. Let’s use them to lift people up.\nWhat will you cheer for today? 💛"
+ },
+ "approved": true,
+ "source": "generated with claude-sonnet-5-5"
+}
